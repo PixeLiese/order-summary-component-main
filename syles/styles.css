@@ -1,0 +1,205 @@
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+img{
+    display: block;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+main{
+    background-color: #FFF;
+    width: 88%;
+    margin: 100px auto 100px auto;
+    border-radius: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.content-frame{
+    padding: 20px 30px 30px 30px;
+    height: auto;
+}
+
+p{
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin: 0;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.hero-image{
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+
+/* _________ Text changes  _________*/ 
+
+.main-text{
+    text-align: center;
+    line-height: 26px;
+}
+
+.time-plan{
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+.change{
+    font-size: 13px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+.plan-price{
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
+/* ___________ Flexbox ________________*/
+
+.plan-order{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 15px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.icon-price-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.payment{
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    box-shadow: hsla(245, 75%, 52%,0.2) 0px 20px 20px;;
+}
+    .cancel{
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ___________   HOVER    _________________*/
+
+.change:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.payment:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+@media screen and (min-width:500px){
+
+    .hero-image{
+        width: 100%;
+    }
+
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+
+    main{
+        width: 450px;
+    }
+
+    .content-frame{
+        padding: 40px 50px;
+        height: auto; /* voir si je garde comme ça*/
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .main-text{
+        font-size: 17px;
+    }
+
+    .time-plan{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .plan-price{
+        font-size: 17px;
+    }
+
+    .change{
+        font-size: 15px;
+    }
+
+    .plan-order{
+        padding: 28px 22px;
+    }
+
+    .payment, .cancel{
+        font-size: 15px;
+    }
+
+    .payment{
+        padding: 16px 0;
+        margin-bottom: 40px;
+    }
+    .cancel{
+        margin-bottom: 10px;
+    }
+
+}
